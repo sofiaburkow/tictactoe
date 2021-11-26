@@ -65,12 +65,14 @@ def get_input(player, board):
         except:
             print("Not a valid move. Please type again.")
 
+            
 def full_board(board):
     for row in board:
         for element in row:
             if element == " ":
                 return False
     return True
+
 
 def main():
     board = create_new_board() 
@@ -94,6 +96,5 @@ def main():
     print(f"The game is finished.")
 
     
-
 if __name__ == '__main__':  
     main()
